@@ -1,4 +1,3 @@
-from time import sleep
 import pygame
 import random
 import tkinter
@@ -100,7 +99,6 @@ while True:
         if ball.colliderect(b):
             bricks.remove(b)
     if len(bricks) == 0:
-        sleep(100)
         messagebox.showinfo("GGS", "YOU WIN")
         game_over = messagebox.askyesno("GGS", "Play Again?")
         if game_over:
